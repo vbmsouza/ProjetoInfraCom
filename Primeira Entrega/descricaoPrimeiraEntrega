@@ -1,0 +1,9 @@
+# O QUE FOI PEDIDO PARA A PRIMEIRA ENTREGA
+--------------------------------------------------------------
+Para a primeira entrega, a equipe deve realizar a implementação de
+comunicação usando o UDP comum utilizando a biblioteca Socket de
+Python. Implementar a função checksum.
+
+Todos os integrantes
+da equipe devem anexar a esta atividade uma pasta compactada contendo os
+arquivos necessários. A primeira entrega vale 30% da nota do projeto.
