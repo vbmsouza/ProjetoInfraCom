@@ -1,0 +1,8 @@
+# O QUE FOI SOLICITADO PARA A SEGUNDA ENTREGA:
+----------------------------------------------
+
+Para a segunda entrega, vocês deverão implementar a confiabilidade sobre o UDP tendo como base o rdt3.0 que consta no livro do Kurose.
+
+Como na entrega anterior, todos os integrantes da equipe devem enviar uma pasta compactada contendo os arquivos necessários.
+
+A segunda entrega vale 30% da nota total do projeto.
