@@ -1,5 +1,6 @@
-# O QUE FOI PEDIDO PARA A PRIMEIRA ENTREGA
---------------------------------------------------------------
+# O QUE FOI SOLICITADO PARA A PRIMEIRA ENTREGA:
+-----------------------------------------------
+
 Para a primeira entrega, a equipe deve realizar a implementação de
 comunicação usando o UDP comum utilizando a biblioteca Socket de
 Python. Implementar a função checksum.
