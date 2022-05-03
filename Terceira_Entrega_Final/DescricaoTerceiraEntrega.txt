@@ -1,0 +1,7 @@
+Para a terceira entrega, vocês devem realizar  a implementação do chatbot
+
+e fazer um vídeo mostrando seu funcionamento. Todos os integrantes devem
+participar da apresentação. Podem postar o vídeo no Youtube ou enviar um link do Google Drive.
+
+***Lembrem que a implementação deve ser feita se utilizando do que foi desenvolvido nas outras etapas. Corrijam os erros e comentem o código.***
+Todos os integrantes da equipe devem enviar os arquivos necessários. Esta entrega vale 40% da nota final do projeto.
