@@ -188,5 +188,5 @@ while True:
         
         elif msg == "6":"""
 
-        packet, address = server_socket.recvfrom(1024) #espera conexoes
+        
         
