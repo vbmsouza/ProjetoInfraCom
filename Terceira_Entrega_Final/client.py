@@ -7,7 +7,7 @@
 #funcao makepkt cria pacote com num_de_seq, checksum, source_port,dest_port e os dados
 #funcao update_seq_number atualiza o numero de sequencia
 from datetime import date, datetime, time
-
+from time import sleep
 import socket
 import struct
 
@@ -101,9 +101,16 @@ while 1:
     # A partir daqui recebemos a msg do server
     packet, server = client_socket.recvfrom(1024) 
     data = packet[16:]
+    
 
     if  not_corrupt(packet,seqNumber,'receiver'):
-        
+        if data.decode() == "Volte sempre ^^":
+            print("{:02d}:{:02d}".format(datetime.now().hour,datetime.now().minute) + f" CINtofome:{data.decode()}")
+            client_socket.sendto(make_pkt(source_port,server[1],seqNumber,'ACK'),server)
+            
+            sleep(3)
+            client_socket.close()
+
         print("{:02d}:{:02d}".format(datetime.now().hour,datetime.now().minute) + f" CINtofome:{data.decode()}")
         client_socket.sendto(make_pkt(source_port,server[1],seqNumber,'ACK'),server)
         seqNumber = update_seq_number(seqNumber)
@@ -113,6 +120,6 @@ while 1:
         client_socket.sendto(make_pkt(source_port,server[1],(1-seqNumber),'ACK'),server)
 
 
-    msg = input("{:02d}:{:02d}".format(datetime.now().hour,datetime.now().minute) + " Cliente: ")
+    msg = str(input("{:02d}:{:02d}".format(datetime.now().hour,datetime.now().minute) + f" {nome}: "))
 client_socket.close()
     
